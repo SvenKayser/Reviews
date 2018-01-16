@@ -1,0 +1,252 @@
+HELLO! BOOT0 is starting!
+[98]boot0 commit : 6e906496ae7186126cfdade189def3128c9f3f79
+ 
+[117]PMU: AXP806
+[119]vdd-sys vol:960mv
+[123]set pll start
+[126]set pll end
+[128]rtc[0] value = 0x00000000
+[131]rtc[1] value = 0x00000000
+[134]rtc[2] value = 0x00000000
+[137]rtc[3] value = 0x00000000
+[140]rtc[4] value = 0x00000000
+[143]rtc[5] value = 0x00000000
+[146]DRAM VERSION IS V2_5
+[149]PMU:Set DDR Vol 1200mV OK.
+[152]DRAM CLK =744 MHZ
+[154]DRAM Type =7 (3:DDR3,4:DDR4,6:LPDDR2,7:LPDDR3)
+[159]DRAM zq value: 003b3bfb
+[166]IPRD=006d006d--PGCR0=00000f5d--PLL=b0003d00
+[171]DRAM SIZE =2048 M,para1 = 000030fa,para2 = 08001000
+[182]DRAM simple test OK.
+[185]dram size =2048
+[188]card no is 2
+[189]sdcard 2 line count 8
+[192][mmc]: mmc driver ver 2017-03-14 13:56
+[196][mmc]: mmc 2 bias 00000004
+[205][mmc]: ***Try MMC card 2***
+[228][mmc]: MMC 5.0
+[230][mmc]: HSDDR52/DDR50 8 bit
+[233][mmc]: 50000000 Hz
+[236][mmc]: 15028 MB
+[238][mmc]: ***SD/MMC 2 init OK!!!***
+[328]Loading boot-pkg Succeed(index=0).
+[332]Entry_name        = u-boot
+[347]Entry_name        = parameter
+[350]Entry_name        = monitor
+[354]Entry_name        = scp
+[363]set arisc reset to de-assert state
+[367]Entry_name        = soc-cfg
+[371]Entry_name        = dtb
+[374]Entry_name        = board-cfg
+[378]Entry_name        = board-fex
+[381]Entry_name        = esm-img
+[386]Entry_name        = logo
+[389]Ready to disable icache.
+[392]0xffffffff 0xffffffff
+[394]0xff19ffff 0xffffffff
+[397]0xff0f15ff 0xffffffff
+[400]0x1919ffff 0xffffff19
+[402]0x1026ffff 0xffffffff
+[405]0x1b1cffff 0xffffffff
+INFO:    Configuring SPC Controller
+NOTICE:  BL3-1: v1.0(debug):7408d88
+NOTICE:  BL3-1: Built : 20:42:28, Aug 29 2017
+NOTICE:  BL3-1 commit: 7408d88f80cb14038350a8f55a280fd0c4caf626
+
+INFO:    BL3-1: Initializing runtime services
+ERROR:   Error initializing runtime service tspd_fast
+INFO:    BL3-1: Preparing for EL3 exit to normal world
+INFO:    BL3-1: Next image address = 0x4a000000
+INFO:    BL3-1: Next image spsr = 0x1d3
+
+
+U-Boot 2014.07 (Sep 26 2017 - 11:03:30) Allwinner Technology 
+
+uboot commit : 7cc54180a96363596d4b1fe11cc781c48b5002f7
+ 
+secure enable bit: 0
+normal mode: with secure monitor
+I2C:   ready
+[0.456]pmbus:   ready
+u0:8004ee1a
+[0.456][ARISC] :arisc initialize
+[0.481][ARISC] :arisc para ok
+[SCP] :sunxi-arisc driver begin startup 2
+[SCP] :arisc version: [v0.3.13]
+[SCP] :sunxi-arisc driver v1.10 is starting
+[0.494][ARISC] :sunxi-arisc driver startup succeeded
+[0.496]PMU: AXP806
+[0.496]PMU: AXP806 found
+[0.496]bat_vol=0, ratio=0
+axp=axp806, supply=bldo2, vol=1800 
+axp=, supply=, vol=0 
+[0.500]set power on vol to default
+[0.500]dcdca_vol = 1000, onoff=1
+[0.504]aldo2_vol = 3300, onoff=1
+[0.508]find power_sply to end
+[0.512]dcdca_vol = 1100, onoff=1
+[0.513]PMU: cpux 888 Mhz,AXI=296 Mhz
+PLL6=600 Mhz,AHB1=200 Mhz, APB1=150Mhz MBus=400Mhz
+DRAM:  2 GiB
+[0.515]fdt addr: 0xb6ccee20
+[0.515]gd->fdt_size: 0x18820
+Relocation Offset is: 75d77000
+gic: sec monitor mode
+[box standby] read rtc = 0x0
+[box standby] start_type = 0x1
+[box standby] to kernel
+ir boot recovery not used
+[0.626][key recovery] no key press.
+[0.626]power on cpu1
+[0.627][cpu1]task entry
+[0.627][cpu1]PowerBus = 0( 2:vBus 3:acBus other: not exist)
+[0.627][cpu1]no battery exist
+[0.627]start
+[cpu1]drv_disp_init
+[cpu1]init_clocks: finish init_clocks.
+[0.636]power on cpu2
+workmode = 0,storage type = 2
+[0.636]MMC:      2
+[0.636][mmc]: mmc driver ver 2017-09-4 10:12:00
+[0.637][cpu2]task entry
+[0.638][cpu1]HDMI 2.0 driver init start!
+[0.638][cpu2]ready to work
+[0.639][mmc]: get sdc_ex_dly_used 2, use auto tuning sdly
+[cpu1]__clk_enable: clk is null.
+[0.649][mmc]: card2 io is 1.8V.
+[0.652][cpu1]hdmi cec clk enable failed!
+[0.655][mmc]: get sdc2 sdc_tm4_hs200_max_freq 150.
+[0.659][cpu1]enable ddc_scl pin
+[0.663][mmc]: get sdc2 sdc_tm4_hs400_max_freq 100.
+[0.666][cpu1]enable ddc_sda pin
+SUNXI SD/MMC: 2[0.673][cpu1]enable hmid cec pin
+[0.666][cpu2]cpu 2 enter wfi mode
+
+[0.686][mmc]: media type 0x8000000
+[0.686][mmc]: Try MMC card 2
+[0.709][mmc]: host caps: 0x1ef
+[0.710][mmc]: MID 000011 PSN 309dac03
+[0.710][mmc]: PNM 400073 -- 0x34-30-30-30-37
+[0.710][mmc]: PRV 0.0
+[0.710][mmc]: MDT m-2 y-2015
+[0.710][mmc]: MMC v5.0
+[0.710][mmc]: bus_width      : 8 bit
+[0.710][mmc]: user capacity  : 15028 MB
+[0.711][mmc]: SD/MMC 2 init OK!!!
+[0.715][mmc]: Best spd md: 4-HS400, freq: 3-100000000
+[0.719][mmc]: EOL Info(Rev blks): Normal
+[0.722][mmc]: Wear out(type A): [0.725][mmc]: 0%-10% life time used
+[0.728][mmc]: Wear out(type B): [0.731][mmc]: Not defined
+[0.733][mmc]: End mmc_init_boot
+[0.736]sunxi flash init ok
+used mbr [0], count = 14
+[0.741]try to burn key
+--------fastboot partitions--------
+-total partitions:14-
+-name-        -start-       -size-      
+bootloader  : 1000000       1000000     
+env         : 2000000       1000000     
+boot        : 3000000       2000000     
+system      : 5000000       60000000    
+verity_block: 65000000      1000000     
+misc        : 66000000      1000000     
+recovery    : 67000000      2000000     
+private     : 69000000      1000000     
+[cpu1]pwm_request: reg = 0x300a000. pwm = 1.
+alog        : 6a000000      4000000     
+[cpu1]request pwm success, pwm = 1.
+Reserve0    : 6e000000      1000000     
+Reserve1    : 6f000000      2000000     
+[cpu1]speed=200000, slave=16
+Reserve2    : 71000000      1000000     
+cache       : 72000000      30000000    
+UDISK       : a2000000      0           
+-----------------------------------
+not suppert programmer
+base bootcmd=run setargs_nand boot_normal
+bootcmd set setargs_mmc
+misc partition found
+[0.826]to be run cmd=run setargs_mmc boot_normal
+mac string is 00:00:00:00:00:00
+read item0 copy0
+Item0 (Map) magic is bad
+the secure storage item0 copy0 is bad
+read item0 copy1
+Item0 (Map) magic is bad
+the secure storage item0 copy0 == copy1, the data is good
+the secure storage map is empty
+no item name wifi_mac in the map
+sunxi storage read fail
+no item name bt_mac in the map
+sunxi storage read fail
+no item name selinux in the map
+sunxi storage read fail
+no item name specialstr in the map
+sunxi storage read fail
+check user data form private
+the user data'magic is bad
+[0.879][mmc]: hsddr 2-50000000
+[0.880][mmc]: hs200 4-150000000
+[0.883][mmc]: hs400 3-100000000
+[0.886][mmc]: get max-frequency ok 150000000 Hz
+[0.890][mmc]: 0 0 0: 0 0 0
+[0.892][mmc]: get max-frequency ok 100000000 Hz
+[0.900]update dtb dram start
+[0.901]update dtb dram  end
+serial is: 0c000141043e4c831c0b
+Net:   phy_mode=rgmii, phy_interface=6
+eth0
+Warning: failed to set MAC address
+
+[0.915]inter uboot shell
+Hit any key to stop autoboot:  0 
+[0.918]read partition: boot or recovery
+[cpu1]drv_disp_init finish
+[cpu1]hdmi hdcp not enable!
+[cpu1]get format[40a] for type[4]
+[cpu1]get format[20b] for type[2]
+[cpu1]main-hpd:count=1,sel=0,type=4
+[cpu1]edid all null
+[cpu1]save_int_to_kernel disp.tv_vdid(0x0) code:<no error>
+[1.011][cpu1][HDMI2.0]CEA VIC=16: [1.011][cpu1]1920x1080p[1.013][cpu1]@60 Hz [1.015][cpu1]16:9, [1.017][cpu1]8-bpp [1.018][cpu1]YCbCr-444
+[1.020][cpu1]BT709
+[1.022][cpu1]eotf:SDR_LUMINANCE_RANGE
+[1.030]sunxi flash read :offset 3000000, 18523218 bytes OK
+Kernel load addr 0x40080000 size 13735 KiB
+Kernel command line: selinux=1 androidboot.selinux=permissive cma=64M, use it to update bootargs
+RAM disk load addr 0x41000000 size 3331 KiB
+[1.062]ready to boot
+[1.062]check cpu power status
+[1.062]cpu2 has poweroff
+[1.137][cpu1]attched ok, mgr0<-->dev0
+[1.137][cpu1]type,mode,fmt,bits,eotf,cs=4,10,yuv444,8bits,4,257
+[cpu1]save_int_to_kernel disp.boot_disp(0x40a) code:<no error>
+[cpu1]save_int_to_kernel disp.init_disp(0x20b0000) code:<no error>
+[cpu1]get hdmi config from bootparam success.
+[cpu1]hdmi config: format-1 bits-0 cs-257 eotf-4
+[cpu1]size=0x384000, ram_size=0x80000000, FRAME_BUFFER_SIZE=0x1000000
+[1.150]end
+[cpu1]advert_enable not set
+[cpu1]save_string_to_kernel disp.boot_fb0(bf000000,500,2d0,20,1400,64,0,49c,2d0). ret-code:<no error>
+[1.162][cpu1]boot logo from boot_package/toc1 item display ok
+[1.218][cpu1]cpu 1 enter wfi mode
+[1.218]cpu1 has poweroff
+[1.225]prepare for kernel
+[1.225]check cpu power status
+[1.225]cpu2 has poweroff
+[1.225]cpu1 has poweroff
+[1.225][mmc]: mmc exit start
+[1.252][mmc]: mmc 2 exit ok
+[1.252]
+Starting kernel ...
+
+INFO:    BL3-1: Next image address = 0x40080000
+INFO:    BL3-1: Next image spsr = 0x3c5
+[    0.000000] Initializing cgroup subsys cpu
+[    0.000000] Initializing cgroup subsys cpuacct
+[    0.000000] Linux version 3.10.65 (lfk@AZW) (gcc version 4.9.3 20150113 (prerelease) (Linaro GCC 4.9-2015.01-3) ) #1 SMP PREEMPT Wed Nov 1 10:57:27 CST 2017
+[    0.000000] CPU: AArch64 Processor [410fd034] revision 4
+[    0.000000] Machine: sun50iw6
+[    0.000000] bootconsole [earlycon0] enabled
+petrel-p1:/ $ 
